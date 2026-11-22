@@ -1,16 +1,20 @@
 # Personal Finance & Expense Tracker
 
-A web-based personal finance management application built using Python, Flask, and MySQL. It helps users track income and expenses, manage transactions, and understand their spending through financial summaries and visual analytics.
+A web-based personal finance management application built using **Python, Flask, and MySQL**. FinanceFlow helps users manage income and expenses, track transactions, and understand their spending through financial summaries and visual analytics.
+
+## Application Preview
+
+![FinanceFlow Dashboard](screenshots/dashboard.png)
 
 ## Features
 
 - **Dashboard:** View total income, expenses, and available balance.
 - **Transaction Management:** Add, edit, and delete income and expense records.
 - **Transaction History:** View all financial transactions.
-- **Search & Filtering:** Filter transactions by category, type, and date range.
-- **Financial Analytics:** Visualize monthly income and expenses.
-- **Category-wise Analysis:** Understand spending across different categories.
-- **Database Integration:** Store transaction records persistently using MySQL.
+- **Search & Filtering:** Search transactions and filter by type and date range.
+- **Monthly Analytics:** Visualize monthly income and expenses using charts.
+- **Category-wise Analysis:** Analyze spending across different categories.
+- **MySQL Integration:** Persistently store financial transaction records.
 
 ## Technology Stack
 
@@ -21,7 +25,7 @@ A web-based personal finance management application built using Python, Flask, a
 | MySQL | Database management |
 | HTML | Page structure |
 | CSS | User interface and styling |
-| JavaScript | Interactive charts |
+| JavaScript | Interactive functionality |
 | Chart.js | Financial data visualization |
 
 ## Project Structure
@@ -33,15 +37,19 @@ personal-finance-tracker/
 ├── database.py
 ├── requirements.txt
 ├── .gitignore
+├── README.md
 │
 ├── static/
 │   ├── style.css
 │   └── script.js
 │
-└── templates/
-    ├── dashboard.html
-    ├── transactions.html
-    └── edit_transaction.html
+├── templates/
+│   ├── dashboard.html
+│   ├── transactions.html
+│   └── edit_transaction.html
+│
+└── screenshots/
+    └── dashboard.png
 ```
 
 ## Installation & Setup
@@ -66,7 +74,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Set up MySQL
+### 4. Configure MySQL
 
 Create the database:
 
@@ -91,40 +99,4 @@ CREATE TABLE transactions (
 
 ### 5. Configure environment variables
 
-Create a `.env` file in the project root:
-
-```env
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_mysql_password
-DB_NAME=finance_tracker
-```
-
-Replace the credentials with your local MySQL configuration.
-
-### 6. Run the application
-
-```bash
-python app.py
-```
-
-Open your browser:
-
-```text
-http://127.0.0.1:5000
-```
-
-## Future Improvements
-
-- User authentication and account management
-- Budget planning and expense limits
-- Export financial reports
-- Improved financial insights
-
-## Author
-
-**Pranshu Sharma**
-
-B.Tech Computer Science Engineering
-
-GitHub: [PranshuSharma-04](https://github.com/PranshuSharma-04)
+Create a `.env` file
